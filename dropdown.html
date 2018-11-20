@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>My Basic Mobile page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" >
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Homepage-->
+<div data-role="page" id="home">
+
+
+
+
+
+    <div data-role="popup" id="Mainnavpanel" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="Page1.html" class="ui-btn" data-transition="none">About us</a>
+            </li>
+
+            <li>
+            	<a href="Page2.html" class="ui-btn" data-transition="none">Page2</a>
+            </li>
+
+            <li>
+            	<a href="Page3.html" class="ui-btn" data-transition="none">Page3</a>
+            </li>
+
+             <li>
+             	<a href="#MainPageheader" data-rel="close" class="ui-btn">Close</a>       
+            </li>
+
+        </ul>
+    </div>
+
+
+
+<!--
+    <div data-role="header" id="MainPageheader" data-position="fixed" data-tap-toggle="false" data-fullscreen="false">
+         <h1>Header</h1>
+        <a href="#Mainnavpanel" class="ui-btn ui-btn-icon-left ui-btn-icon-notext ui-nodisc-icon ui-icon-bars" data-rel="popup" style="float:right;"></a>
+    </div>
+
+-->
+    <div data-role="navbar" data-iconpos="left">
+        <ul>
+            <li><a href="#" data-icon="home" class="ui-btn-active ui-persist-state">Home</a></li>
+            <li><a href="#" data-icon="grid">Summary</a></li>
+            <li><a href="#" data-icon="star" >Favs</a></li>
+            <li><a href="#Mainnavpanel" data-icon="carat-d" data-rel="popup">Services</a></li>
+        </ul>
+    </div><!-- /navbar -->
+
+    
+    <div data-role="content">content</div>
+
+
+</div>
+
+</body>
+</html>

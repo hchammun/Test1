@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mobile app</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+   
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/myjsfile.js"></script>
+
+</head>
+<body>
+
+
+
+
+<!-- Home page-->
+
+	<div data-role="page" id="home" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Homepage</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close homepage -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Info page-->
+
+	<div data-role="page" id="info" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader1" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option1" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option1" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel1" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" class="ui-btn-active ui-state-persist" data-icon="plus" data-theme="b" >Info</a></li>
+			<li><a href="#mainnavpanel1" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Info page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close infopage -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Glucose page-->
+
+	<div data-role="page" id="glucose" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader2" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option2" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option2" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel2" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel2" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Glucose page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close glucose page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- bmi page-->
+
+	<div data-role="page" id="bmi" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader3" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option3" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option3" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel3" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel3" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Bmi page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close bmi page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- meal plan page-->
+
+	<div data-role="page" id="mealplan" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader4" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option4" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option4" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel4" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel4" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Meal plan page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close mealplan page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- exercise page-->
+
+	<div data-role="page" id="exercise" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader5" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option5" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option5" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel5" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel5" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Exercise page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close exercise page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- quiz page-->
+
+	<div data-role="page" id="quiz" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader6" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option6" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option6" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel6" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel6" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Quiz page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close quiz page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- aboutus page-->
+
+	<div data-role="page" id="aboutus" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader7" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option7" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option7" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel7" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel7" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>About us page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close aboutus page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- login page-->
+
+	<div data-role="page" id="login" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader8" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option8" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option8" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel8" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel8" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Login page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close login page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- signup page-->
+
+	<div data-role="page" id="signup" >
+
+	
+<!-- header -->
+	<div data-role="header" id="MainPageheader9" data-position="fixed" data-tap-toggle="false" data-fullscreen="false" data-theme="b" style="height: 70px;">
+			<img src="images/ab.png" style="padding-top: 22px; padding-left: 15px;" width="160" height="28">
+		<a href="#option9" data-icon="arrow-l" class="ui-btn-right" style="margin-top: 15px;"><span> More</span></a>
+	</div>
+
+<!-- close header -->
+
+<!-- panel -->
+	<div data-role="panel" id="option9" data-display="overlay" data-position="right">
+	
+		<div data-role="controlgroup">
+			<a href="#login" data-role="button" data-icon="user" data-theme="b">Login</a>
+			<a href="#signup" data-role="button" data-icon="grid" data-theme="b">Sign up</a>
+		</div>
+	
+	</div>
+
+<!-- close panel -->
+
+
+
+<!-- My dropdown -->
+    <div data-role="popup" id="mainnavpanel9" data-theme="b" data-arrow="t">
+        <ul data-role="listview">
+
+            <li>
+            	<a href="#glucose" class="ui-btn" data-transition="none">Glucose range level</a>
+            </li>
+
+            <li>
+            	<a href="#bmi" class="ui-btn" data-transition="none">Bmi Calculator</a>
+            </li>
+
+            <li>
+            	<a href="#mealplan" class="ui-btn" data-transition="none">Diabetic Meal plan</a>
+            </li>
+
+            <li>
+            	<a href="#exercise" class="ui-btn" data-icon="recycle" data-transition="none">Exercise plan</a>
+            </li>
+
+            <li>
+            	<a href="#quiz" class="ui-btn" data-icon="edit" data-transition="none">Quiz</a>
+            </li>
+
+            <li>
+            	<a href="#aboutus" class="ui-btn" data-icon="check" data-transition="none">About us</a>
+            </li>
+
+
+        </ul>
+    </div>
+
+<!-- close dropdown -->
+
+
+
+<!-- navbar -->
+
+	<div data-role="navbar"  data-iconpos="left">
+		<ul>
+			<li><a href="#home" data-icon="home"  data-theme="b">Home</a></li>
+			<li><a href="#info" data-icon="plus" data-theme="b">Info</a></li>
+			<li><a href="#mainnavpanel9" class="ui-btn-active ui-state-persist" data-icon="carat-d" data-rel="popup" data-theme="b">Services</a></li>
+	<!--	<li><a href="#" data-icon="edit" data-theme="b">Quiz</a></li> -->
+ 		</ul>
+	</div>
+
+<!-- close navbar -->
+
+
+<!-- main -->
+		<div data-role="main" class="ui-content" data-theme="b">
+		
+	<h2>Signup page</h2>
+		</div>
+
+<!--close div main -->
+		
+
+	<!--	<a href="#pagetwo" data-transition="fade"  class="ui-btn">Page two</a> -->
+
+
+<!-- footer -->
+	<div data-role="footer" data-position="fixed" style="background-color: black;">
+		<p style="font-family: Times; text-align: center;margin: 8px;">&copy; Copyright | Beat Diabetes</p>
+	</div>
+<!-- close footer -->
+
+
+</div> <!-- close signup page -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	
+
+</script>
+</body>
+</html>

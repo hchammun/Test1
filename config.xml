@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id = "com.gs.calc"
+	versionCode ="1"
+	version="1.0.0" >
+
+	<!-- Version code is optional and android only-->
+
+	<name> Diabete Template </name>
+
+	<description> Test of first trial of app </description>
+
+	<author href="https://build.phonegap.com" email="hchammun@gmail.com">
+		Hansley Chammun </author>
+		
+
+	</widget>

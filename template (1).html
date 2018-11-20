@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Basic Mobile page</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" >
+
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<script src="jquery.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script src="myjsfile.js"></script>
+</head>
+<body>
+
+	<!-- 1st page Home page-->
+	<div data-role="page" id="home" data-theme="a">
+
+
+		<div data-role="header" data-position="fixed" data-theme="b">
+
+			<h1>Home</h1>
+			<a href="#homepanel" data-role="button" class="ui-btn-right" data-icon="bars" data-iconpos="notext">STP</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<h1>Welcome to my Mobile page!</h1>
+
+			<div data-role="controlgroup">
+				<a href="#blog" data-role="button" data-icon="arrow-r" data-iconpos="right" >Blog</a>
+				<a href="#photos" data-role="button" data-icon="arrow-r" data-iconpos="right">Photos</a>
+				
+			</div>
+
+		</div>
+
+
+<!-- Nav -->
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div  data-role="navbar">
+				<ul>
+					<li><a href="#home" data-role="button" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="#blog" data-role="button"  data-icon="grid">Blog</a></li>
+					<li><a href="#photos" data-role="button" data-icon="arrow-r">Photos</a></li>
+					
+				</ul>
+			</div>
+		</div>
+
+<!--
+		<div data-role="footer" data-position="fixed" data-theme="b">
+		<p style="text-align: center;">	Copyright | hansley_C </p>
+		</div>
+	
+
+-->		
+<!-- close nav-->
+	</div> <!-- close 1st page Home page-->
+
+
+
+	<!-- 2st page blog page-->
+	<div data-role="page" id="blog" data-theme="a">
+
+
+		<div data-role="header"  data-position="fixed" data-theme="b">
+			<h1>Blog</h1>
+			<a href="#home" data-transistion="slideup" data-icon="home" data-iconpos="notext">Home</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<h1>Blog page</h1>
+		</div>
+
+
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div  data-role="navbar">
+				<ul>
+					<li><a href="#home" data-role="button" data-icon="arrow-r">Home</a></li>
+					<li><a href="#blog" data-role="button"  data-icon="arrow-r" class="ui-btn-active ui-state-persist">Blog</a></li>
+					<li><a href="#photos" data-role="button" data-icon="arrow-r">Photos</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		
+
+	</div> <!-- close 2st blog page-->
+
+
+
+
+
+
+
+	<!-- 3rd page photos page-->
+	<div data-role="page" id="photos" data-theme="a">
+
+
+		<div data-role="header"  data-position="fixed" data-theme="b" data-id="per-header">
+			<h1>Photos</h1>
+			<a href="#home" data-transistion="slideup" data-icon="home" data-iconpos="notext">Home</a>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<div>
+				<h1>Friends Galllery</h1>
+				<ul data-role="listview" data-dividers="true" data-filter="true"  data-filter-placeholder="Search Keyword...." data-inset="true">
+					<li><a href="#" >Jean</a></li>
+					<li><a href="#">Paul</a></li>
+					<li><a href="#">Harry</a></li>
+
+				</ul>
+			</div>
+
+
+			<div>
+				<h1>Animal's Galllery</h1>
+
+				<div data-role="collapsible-set">
+					<ul data-role="listview" data-inset="true" data-shadow="false">
+						<div data-role="collapsible" data-iconpos="right">
+							<h2>Birds</h2>
+							<ul data-role="listview" data-theme="b">
+								<li><a href="">Eagle</a></li>
+								<li><a href="">Sparrow</a></li>
+								<li><a href="">Pink pigeon</a></li>
+								<li><a href="">Faucon</a></li>
+							</ul>
+						</div>
+
+
+						<div data-role="collapsible" data-iconpos="right">
+							<h2>Dogs</h2>
+							<ul data-role="listview" data-theme="b">
+								<li><a href="">Labra</a></li>
+								<li><a href="">Dalmacien</a></li>
+
+							</ul>
+						</div>
+					</ul>
+
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div><!-- CLose main-->
+
+
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<div  data-role="navbar">
+				<ul>
+					<li><a href="#home" data-role="button" data-icon="arrow-r">Home</a></li>
+					<li><a href="#blog" data-role="button" data-icon="arrow-r">Blog</a></li>
+					<li><a href="#photos" data-role="button" data-icon="arrow-r" class="ui-btn-active ui-state-persist">Photos</a></li>
+				</ul>
+			</div>
+		</div>
+		
+
+	</div> <!-- close 2st blog page-->
+
+</body>
+</html>
